@@ -22,9 +22,16 @@ body{
 }
 
 #container{
+    box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
     margin: auto;
     max-width: 750px;
-    min-height: 700px;
+    min-height: min(700px, 80vh);
     background-image: linear-gradient(135deg, #f4f7f6, #dbd7db);
     width: 90%;
     border-radius: 15%;
@@ -39,4 +46,45 @@ h1{
     text-align: center;
     width: 80%;
     font-size: 2.5rem;
+}
+
+input, p{
+    font-size: 1.2rem;
+}
+
+input{
+    border: none;
+    background-image: linear-gradient(30deg, #d3d4d4, #d5d4d7);
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 1.5rem;;
+    display: block;
+    text-decoration: none;
+    box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.02),
+    0 2px 2px hsl(0deg 0% 0% / 0.02),
+    0 4px 4px hsl(0deg 0% 0% / 0.02),
+    0 8px 8px hsl(0deg 0% 0% / 0.02),
+    0 16px 16px hsl(0deg 0% 0% / 0.02)
+    ;
+}
+
+input:focus{
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: calc(100% - 2rem);
+        border-radius: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5px;
+    }
+
+    input, p {
+        font-size: 1rem;
+    }
 }
