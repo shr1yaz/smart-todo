@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body{
+    display: flex;
+    align-items: center;
+}
+
+h1, p{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(90deg, #2a9385, #5300c6);
+}
+
+#container{
+    margin: auto;
+    max-width: 750px;
+    min-height: 700px;
+    background-image: linear-gradient(135deg, #f4f7f6, #dbd7db);
+    width: 90%;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+h1{
+    border-bottom: 2px solid black;
+    text-align: center;
+    width: 80%;
+    font-size: 2.5rem;
+}
